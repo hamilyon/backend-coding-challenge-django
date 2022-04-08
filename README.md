@@ -6,6 +6,13 @@
     python -m pip install gunicorn
     gunicorn app.wsgi
 
+# Creating users
+
+    $ python manage.py shell
+    > from app.user.model import auth_service
+    > auth_service.create_user('1', b'2')
+    
+
 # Backend Coding Challenge
 
 [![Build Status](https://github.com/Thermondo/backend-code-challenge/actions/workflows/main.yml/badge.svg?event=push)](https://github.com/Thermondo/backend-code-challenge/actions)
