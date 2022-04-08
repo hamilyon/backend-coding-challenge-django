@@ -15,7 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from . import note, user
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('note/<int:id>/add_tag', note.view.add_tag),
+    path('note/<int:id>', note.view.edit_note),
+    path('note/', note.view.post_note),
+    path('tag/<str:tag_name>/notes', note.view.by_tag),
+    path('login', user.view.login),
+    path('logout', user.view.logout),
+
 ]
+
+#TODO tests

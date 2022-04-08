@@ -1,3 +1,11 @@
+# Installing and running
+
+    python3 -m venv venv
+    source ./venv/bin/activate
+    pip install -r requirements.txt
+    python -m pip install gunicorn
+    gunicorn app.wsgi
+
 # Backend Coding Challenge
 
 [![Build Status](https://github.com/Thermondo/backend-code-challenge/actions/workflows/main.yml/badge.svg?event=push)](https://github.com/Thermondo/backend-code-challenge/actions)

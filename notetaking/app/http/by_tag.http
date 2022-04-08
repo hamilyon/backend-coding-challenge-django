@@ -1,0 +1,2 @@
+GET http://127.0.0.1:8000/tag/important/notes
+#Cookie:  sessionid=eyJ1c2VyIjp7InVzZXJuYW1lIjoiMSIsImlkIjoxfX0:1ncsMt:3tWZf5xCtYvyrGvB5ARoofcj-4RpGy0SJxKXGJQalL0
